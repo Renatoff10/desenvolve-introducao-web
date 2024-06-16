@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Filmes Favoritos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .movie {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .movie img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .movie h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .movie a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeria de Filmes Favoritos</h1>
+
+  <div class="gallery">
+    <div class="movie">
+      <img src="./imgs/Dune_2021.jpeg" alt="Filme 1">
+      <h3>Filme 1</h3>
+      <a href="https://pt.wikipedia.org/wiki/Dune_(2021)" target="_blank">Ver mais sobre Dune na Wikipedia</a>
+    </div>
+
+    <div class="movie">
+      <img src="./imgs/Transformers-_Rise_of_the_Beasts.jpg" alt="Filme 2">
+      <h3>Filme 2</h3>
+      <a href="https://en.wikipedia.org/wiki/Transformers:_Rise_of_the_Beasts" target="_blank">Ver mais sobre Transformers na Wikipedia</a>
+    </div>
+
+    <div class="movie">
+      <img src="./imgs/Creed_III_poster.png" alt="Filme 3">
+      <h3>Filme 3</h3>
+      <a href="https://en.wikipedia.org/wiki/Creed_III" target="_blank">Ver mais sobre Creed_III na Wikipedia</a>
+    </div>
+
+    <div class="movie">
+      <img src="./imgs/Aquaman_and_the_Lost_Kingdom_poster.jpg" alt="Filme 4">
+      <h3>Filme 4</h3>
+      <a href="https://en.wikipedia.org/wiki/Aquaman_and_the_Lost_Kingdom" target="_blank">Ver mais sobre Aquaman na Wikipedia</a>
+    </div>
+
+    <div class="movie">
+      <img src="./imgs/Guardians_of_the_Galaxy_Vol._3_poster.jpg" alt="Filme 5">
+      <h3>Filme 5</h3>
+      <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._3" target="_blank">Ver mais sobre Guardiões da Galáxia na Wikipedia</a>
+    </div>
+
+    <div class="movie">
+      <img src="./imgs/Inside_Out_(filme).jpg" alt="Filme 6">
+      <h3>Filme 6</h3>
+      <a href="https://pt.wikipedia.org/wiki/Inside_Out_(filme_de_2015)" target="_blank">Ver mais sobre Divertida Mentena Wikipedia</a>
+    </div>
+  </div>
+</body>
+</html>

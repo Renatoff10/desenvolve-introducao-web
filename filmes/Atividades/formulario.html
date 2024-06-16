@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa de Satisfação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        /* Estilo para radio buttons em linha */
+        input[type="radio"] + label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h2>Formulário de Pesquisa de Satisfação</h2>
+        
+        <!-- Parte A: Dados Pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </fieldset>
+        
+        <!-- Parte B: Pesquisa -->
+        <fieldset>
+            <legend>Pesquisa</legend>
+            
+            <label for="pergunta1">1. Você recomendaria nosso serviço?</label><br>
+            <input type="radio" id="pergunta1_sim" name="pergunta1" value="sim" required>
+            <label for="pergunta1_sim">Sim</label>
+            <input type="radio" id="pergunta1_nao" name="pergunta1" value="nao">
+            <label for="pergunta1_nao">Não</label><br>
+            
+            <label for="pergunta2">2. Como você avalia o atendimento ao cliente?</label><br>
+            <input type="radio" id="pergunta2_otimo" name="pergunta2" value="otimo" required>
+            <label for="pergunta2_otimo">Ótimo</label>
+            <input type="radio" id="pergunta2_bom" name="pergunta2" value="bom">
+            <label for="pergunta2_bom">Bom</label>
+            <input type="radio" id="pergunta2_regular" name="pergunta2" value="regular">
+            <label for="pergunta2_regular">Regular</label>
+            <input type="radio" id="pergunta2_ruim" name="pergunta2" value="ruim">
+            <label for="pergunta2_ruim">Ruim</label><br>
+            
+            <label for="pergunta3">3. Qual é o motivo principal da sua avaliação?</label><br>
+            <select id="pergunta3" name="pergunta3" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="qualidade">Qualidade do serviço</option>
+                <option value="preco">Preço dos produtos</option>
+                <option value="atendimento">Atendimento ao cliente</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            
+            <label>
+                <input type="checkbox" name="autorizacao" value="sim">
+                Autorizo o compartilhamento das minhas respostas com terceiros.
+            </label>
+        </fieldset>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

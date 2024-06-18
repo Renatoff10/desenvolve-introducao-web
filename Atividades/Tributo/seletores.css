@@ -1,0 +1,34 @@
+/* Q1 */
+a {
+  color: red; /* cor padrão do link */
+  transition: color 0.3s ease; /* transição suave de cor */
+}
+
+a:hover {
+  color: lime; /* cor do link ao passar o mouse */
+}
+
+/* Q2 */
+/* CSS para parágrafos */
+p {
+  font-family: Arial; /* fonte Arial para parágrafos em geral */
+}
+
+h1 + p {
+  font-weight: bold; /* parágrafos logo após h1 ficarão em negrito */
+}
+
+/* Q3 */
+/* CSS para classe .destaque */
+.destaque {
+  font-family: Arial; /* fonte Arial por padrão */
+
+}
+
+.destaque p {
+  font-weight: bold; /* parágrafos com classe .destaque ficarão em negrito */
+}
+
+.destaque strong {
+  color: red; /* <strong> dentro de .destaque ficará em vermelho */
+}

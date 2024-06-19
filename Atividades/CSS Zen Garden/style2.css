@@ -1,0 +1,56 @@
+/* Diretivas gerais para a página */
+body {
+    width: 80%; /* Largura geral da página em 80% */
+    max-width: 1280px; /* Limita a largura máxima da página a 1280px */
+    margin: 0 auto; /* Centraliza a página na tela */
+}
+
+.intro {
+    height: 550px; /* Altura da seção de introdução */
+}
+
+#design-archives {
+    display: none; /* Remove o container #design-archives da renderização */
+}
+
+/* Incremento no cabeçalho */
+.intro header {
+    background-color: #333; /* Fundo escuro para o cabeçalho */
+    color: #fff; /* Fonte clara para o cabeçalho */
+    padding: 1em; /* Espaçamento interno */
+}
+
+.intro h1 {
+    margin-right: 1em; /* Espaçamento lateral de 1em para o título principal */
+}
+
+.intro h2 {
+    margin-top: 0.5em; /* Espaçamento superior de 0.5em para o subtítulo */
+}
+
+/* Incremento nos menus */
+.sidebar ul {
+    list-style-type: none; /* Remove bullets dos itens de menu */
+    padding-left: 0; /* Remove padding padrão */
+}
+
+.sidebar li {
+    margin-bottom: 1em; /* Espaçamento entre os itens do menu */
+    text-align: center; /* Centraliza os itens do menu */
+}
+
+/* Inversão de cores no rodapé */
+footer {
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: #fff; /* Fonte clara para o rodapé */
+    padding: 4%; /* Espaçamento externo de 4% */
+}
+
+footer a {
+    display: inline-block;
+    border: 2px solid #fff; /* Borda sólida de 2px */
+    padding: 0.5em; /* Espaçamento interno de 0.5em */
+    margin-right: 1em; /* Margem direita entre os links */
+    text-decoration: none;
+    color: #fff; /* Cor do texto dos links */
+}

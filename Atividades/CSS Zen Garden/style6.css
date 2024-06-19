@@ -1,0 +1,38 @@
+/* CSS para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .design-selection {
+      position: static; /* Remove o reposicionamento do menu de design */
+      margin: 0; /* Remove qualquer margem que esteja reposicionando o menu */
+    }
+  
+    .page-wrapper {
+      border: none; /* Remove a borda lateral ao lado da div */
+    }
+  
+    .main.supporting {
+      display: flex;
+      flex-direction: column; /* Muda a orientação do Flexbox para vertical */
+      align-items: stretch; /* Organiza os elementos de forma empilhada */
+    }
+  
+    header {
+      height: auto; /* Remove a altura fixa presente no cabeçalho */
+    }
+  
+    p {
+      margin-top: 0; /* Remove o espaçamento inicial dado a cada um dos parágrafos */
+    }
+  }
+  
+  /* CSS para meios de impressão */
+  @media print {
+    body {
+      font-family: 'Times New Roman', Times, serif; /* Altera o estilo da fonte para uma serifada */
+    }
+  
+    header {
+      background-color: white; /* Altera a cor de fundo do banner para claro */
+      color: black; /* Altera a cor do texto do banner para preto */
+    }
+  }
+  

@@ -1,0 +1,33 @@
+/* Estilização dos links */
+a {
+    color: #FFD700; /* Cor de destaque */
+    font-weight: bold; /* Texto em negrito por padrão */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+a:hover {
+    color: #FFEC8B; /* Tonalidade mais clara/escura ao sobrepor */
+}
+
+a:visited {
+    font-weight: normal; /* Remove negrito dos links visitados */
+}
+
+/* Destaque para a primeira letra do primeiro parágrafo da seção principal */
+.main p:first-of-type:first-letter {
+    font-size: 300%; /* Tamanho 3 vezes maior que o padrão */
+    font-family: 'Georgia', serif; /* Fonte diferente da padrão */
+    float: left; /* Flutua à esquerda */
+    margin-right: 0.1em; /* Espaçamento à direita */
+}
+
+/* Bordas nos itens do menu de design */
+.design-selection nav ul li {
+    border-top: 1px solid #ccc; /* Borda superior em todos os itens */
+    border-bottom: none; /* Remove borda inferior padrão */
+}
+
+.design-selection nav ul li:last-child {
+    border-bottom: 1px solid #ccc; /* Borda inferior apenas no último item */
+}

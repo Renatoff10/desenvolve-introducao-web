@@ -1,0 +1,54 @@
+/* Flexbox no rodapé da seção principal */
+.benefits, .participation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.benefits a, .participation a {
+    flex: 1; /* Todos os links têm o mesmo tamanho */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Layout de flexbox para a seção de benefícios */
+.benefits {
+    flex-direction: row;
+}
+
+.benefits h3 {
+    flex: 30%; /* Título ocupa 30% da largura */
+    text-align: center; /* Centraliza verticalmente */
+}
+
+.benefits p {
+    flex: 70%; /* Texto ocupa 70% da largura */
+}
+
+/* Layout de flexbox para a seção de participação */
+.participation {
+    flex-direction: row;
+}
+
+.participation h3 {
+    flex: 30%; /* Título ocupa 30% da largura */
+    text-align: center; /* Centraliza verticalmente */
+}
+
+.participation p {
+    flex: 70%; /* Texto ocupa 70% da largura */
+}
+
+/* Linha no topo e embaixo das seções de benefícios e participação */
+.benefits {
+    border-top: 1px solid #ccc; /* Linha no topo */
+}
+
+.participation {
+    border-bottom: 1px solid #ccc; /* Linha na parte inferior */
+}
+
+/* Remove a borda duplicada entre as seções de benefícios e participação */
+.benefits + .participation {
+    border-top: none; /* Remove a borda duplicada */
+}

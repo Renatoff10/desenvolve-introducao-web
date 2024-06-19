@@ -42,10 +42,12 @@
 /* Linha no topo e embaixo das seções de benefícios e participação */
 .benefits {
     border-top: 1px solid #ccc; /* Linha no topo */
+    border-bottom: 1px solid #ccc; 
 }
 
 .participation {
     border-bottom: 1px solid #ccc; /* Linha na parte inferior */
+    border-top: 1px solid #ccc; /* Linha no topo */
 }
 
 /* Remove a borda duplicada entre as seções de benefícios e participação */

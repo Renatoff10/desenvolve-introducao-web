@@ -5,77 +5,48 @@
     --cor-destaque: #ff7f50;    /* Cor de destaque */
 }
 
-/* Estilos gerais */
+
+/* Aspectos gerais */
 body {
-    font-family: Arial, sans-serif;
+    width: 800px; /* Tamanho fixo para a página inteira */
+    margin: 0 auto; /* Centraliza a página */
+    font-family: 'Arial', sans-serif; /* Fonte do tipo sans-serif */
+    line-height: 1.6; /* Espaçamento entre linhas padrão */
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
-    margin: 0;
-    padding: 0;
 }
 
-.page-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+p {
+    text-indent: 1em; /* Indenta os parágrafos em 1em */
 }
 
-/* Estilos para o cabeçalho */
-.intro {
-    flex: 1 100%;
-    padding: 20px;
+/* Títulos */
+h1, h2, h3 {
+    text-align: right; /* Alinha todos os títulos para a direita */
 }
 
-.intro h1 {
-    font-size: 3em;
-    color: var(--cor-destaque);
-    margin-bottom: 10px;
+h1 {
+    font-size: 1.8rem; /* Tamanho do h1 em 1.8rem */
 }
 
-.intro h2 {
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-top: 0;
-    color: var(--cor-destaque);
+h2 {
+    font-size: 1.4rem; /* Tamanho do h2 em 1.4rem */
 }
 
-/* Estilos para as seções de conteúdo */
-.summary,
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-    margin-bottom: 30px;
+h3 {
+    font-size: 1.2rem; /* Tamanho do h3 em 1.2rem */
 }
 
-.summary p,
-.preamble p,
-.explanation p,
-.participation p,
-.benefits p,
-.requirements p {
-    line-height: 1.6;
+/* Seções de resumo e principal */
+.summary {
+    text-align: center; /* Centraliza o conteúdo da seção de resumo */
 }
 
-/* Estilos para a barra lateral */
-.sidebar {
-    flex: 0 0 300px;
-    padding: 20px;
-    background-color: var(--cor-destaque);
-    color: white;
+.main {
+    line-height: 1.5; /* Espaçamento entre as linhas de 1.5 para os parágrafos */
 }
 
-.sidebar h3 {
-    font-size: 1.5em;
-    color: white;
-}
-
-.sidebar a {
-    color: white;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
+/* Abreviaturas */
+abbr {
+    font-variant: small-caps; /* Transforma todas as abreviaturas em small-caps */
 }
